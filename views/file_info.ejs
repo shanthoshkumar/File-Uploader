@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Node File Uploads</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <h3>The file has been uploaded to "<%=info.destination%>"</h3>
+      <br>
+    <div class="conatiner">
+      <ul class="collection with-header">
+        <li class="collection-header"><h4>File Attributes</h4></li>
+        <li class="collection-item"><strong>Original Name  :  </strong> <%= info.originalname %></li>
+        <li class="collection-item"><strong>Encoding  :  </strong> <%= info.encoding %></li>
+        <li class="collection-item"><strong>Mimetype  :  </strong> <%= info.mimetype %></li>
+        <li class="collection-item"><strong>Destination  :  </strong> <%= info.destination %></li>
+        <li class="collection-item"><strong>File Saved As  :  </strong> <%= info.filename %></li>
+        <li class="collection-item"><strong>Path  :  </strong> <%= info.path %></li>
+        <li class="collection-item"><strong>File Size  :  </strong> <%= info.size %> bytes</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <br>
+    <div class="container">
+      <h4>Upload Another File</h4> <a class="btn-floating btn-large waves-effect waves-light red" href="./index">+</a>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  </body>
+</html>
